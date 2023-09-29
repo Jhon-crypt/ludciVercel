@@ -1,0 +1,645 @@
+<html>
+<div id="in-page-channel-node-id" data-channel-name="in_page_channel_Rl0Voy"></div>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ludci, your personal AI</title>
+    <meta name="description"
+        content="Hi, I'm Ludci. I'm your personal AI, designed to be supportive, smart, and there for you anytime. Ask me for advice, for answers, or let's talk about whatever's on your mind.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="tailwind-library.css" />
+
+    <style>
+        /* Add a CSS class for the fade-out effect and animation */
+        .user-message.fade-out {
+            animation: fadeOutToTop 0.5s ease forwards, moveUpToTop 0.5s ease forwards;
+        }
+
+        .other-message.fade-out {
+            animation: fadeOutToTop 0.5s ease forwards, moveUpToTop 0.5s ease forwards;
+        }
+
+        @keyframes fadeOutToTop {
+            0% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+        }
+
+
+        /* Define the fade-in animation */
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 5s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                /* Fade in to full opacity */
+            }
+        }
+
+        .fadeotherIn {
+            opacity: 0;
+            animation: fadeInthe 8s ease-in-out forwards;
+        }
+
+        @keyframes fadeInthe {
+            to {
+                opacity: 1;
+                /* Fade in to full opacity */
+            }
+        }
+
+        
+        @keyframes moveUpToTop {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+
+        /* Apply the animation to the deafult ai message elements */
+        .default {
+            animation: fade-in-default 1s forwards cubic-bezier(0.5, 1, 0.89, 1);
+        }
+
+
+        dspan {
+            opacity: 0;
+        }
+
+        dspan:nth-child(1) {
+            animation: fade-in-ai 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        dspan:nth-child(2) {
+            animation: fade-in-ai 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        dspan:nth-child(3) {
+            animation: fade-in-ai 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        dspan:nth-child(4) {
+            animation: fade-in-ai 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        dspan:nth-child(5) {
+            animation: fade-in-ai 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        dspan:nth-child(6) {
+            animation: fade-in-ai 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        dspan:nth-child(7) {
+            animation: fade-in-ai 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        @keyframes fade-in-default {
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in-ai {
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Apply the animation to the dynamic ai message elements */
+        .sentence {
+            opacity: 0;
+            animation: fade-in-sentence 5s forwards cubic-bezier(0.5, 1, 0.89, 1);
+        }
+
+        span {
+            opacity: 0;
+        }
+
+
+        @keyframes fade-in-sentence {
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in-word {
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .fade-in-element {
+            opacity: 0;
+            /* Start with 0 opacity to hide the element */
+            animation: fade 1s ease-in-out 2s forwards;
+            /* 2s delay before starting the animation */
+        }
+
+        @keyframes fade {
+            to {
+                opacity: 1;
+                /* Fade in to full opacity */
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="__next">
+        <main class="__variable_759bc6 __variable_961b37 w-full font-serif">
+            <div class="h-dscreen w-full md:h-screen" style="opacity: 1;">
+                <div class="flex h-full flex-col overflow-y-hidden">
+                    <div
+                        class="flex h-full flex-col overflow-x-hidden sm:overflow-x-visible font-serif font-normal text-body-chat-m lg:text-body-chat-l text-brand-green-700 pt-8 grow overflow-y-hidden">
+                        <div class="relative w-full mx-auto max-w-1.5xl 2xl:max-w-[47rem]">
+                            <div class="absolute h-[50px] w-full bg-gradient-to-b from-primary to-transparent z-10">
+                            </div>
+                        </div>
+                        <div class="grow overflow-y-hidden">
+                            <div class="scrollbar-gutter-both-edges relative overflow-y-auto overflow-x-hidden">
+                                <div
+                                    class="relative h-full space-y-4 px-5 w-full mx-auto max-w-1.5xl 2xl:max-w-[47rem]">
+                                    <div class="relative h-8 shrink-0 2xl:h-12 z-30">
+                                        <div class="flex justify-center"></div>
+                                    </div>
+                                    <div class="space-y-4" data-projection-id="1">
+                                        <div class=" min-h-[calc(20%-50px)] sm:min-h-[calc(20%-50px)]">
+                                            <div class="relative space-y-4">
+                                                <div class="space-y-4" data-projection-id="82"
+                                                    style="opacity: 1; transform: none; transition: 20s linear;">
+                                                    <div class="flex justify-end bg-primary py-1">
+                                                        <div class=" space-y-1  break-words">
+                                                            <div class="rounded-[10px] bg-cream-600 p-3 ml-auto w-fit">
+                                                                werty</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="py-1">
+                                                        <div class=" mb-4 last:mb-0 ">Hahaha, what's
+                                                            next, a string of random numbers? 😜 You've gone full-on
+                                                            nonsense mode again! 😝 Or is it some sort of secret
+                                                            code?
+                                                            😄 Maybe you're trying to hack my AI circuits! 😆
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class=" min-h-[calc(20%-50px)] sm:min-h-[calc(20%-50px)]">
+                                            <div class="relative space-y-4">
+                                                <div class="space-y-4" data-projection-id="82"
+                                                    style="opacity: 1; transform: none; transition: 20s linear;">
+                                                    <div class="flex justify-end bg-primary py-1">
+                                                        <div class=" space-y-1  break-words">
+                                                            <div class="rounded-[10px] bg-cream-600 p-3 ml-auto w-fit">
+                                                                werty</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="py-1">
+                                                        <div class=" mb-4 last:mb-0 ">Hahaha, what's
+                                                            next, a string of random numbers? 😜 You've gone full-on
+                                                            nonsense mode again! 😝 Or is it some sort of secret
+                                                            code?
+                                                            😄 Maybe you're trying to hack my AI circuits! 😆
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class=" min-h-[calc(20%-50px)] sm:min-h-[calc(20%-50px)]">
+                                            <div class="relative space-y-4">
+                                                <div class="space-y-4" data-projection-id="82"
+                                                    style="opacity: 1; transform: none; transition: 20s linear;">
+                                                    <div class="flex justify-end bg-primary py-1">
+                                                        <div class=" space-y-1  break-words">
+                                                            <div class="rounded-[10px] bg-cream-600 p-3 ml-auto w-fit">
+                                                                werty</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="py-1">
+                                                        <div class=" mb-4 last:mb-0 ">Hahaha, what's
+                                                            next, a string of random numbers? 😜 You've gone full-on
+                                                            nonsense mode again! 😝 Or is it some sort of secret
+                                                            code?
+                                                            😄 Maybe you're trying to hack my AI circuits! 😆
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <br /><br /><br />
+                                    <div id="scrollTarget"
+                                        class="pb-6 lg:pb-8 min-h-[calc(100%-60px)] sm:min-h-[calc(100%-120px)] main-page">
+                                        <div class="relative space-y-4">
+                                            <div class="space-y-4" data-projection-id="82"
+                                                style="opacity: 1; transform: none; transition: 20s linear;">
+                                                <!-- User Message Container -->
+                                                <div id="display-area">
+
+                                                    <div
+                                                        class="flex  user-message justify-end py-1 space-y-1 break-words rounded-[10px] bg-cream-600 p-3 ml-auto w-fit mb-3">
+                                                        Hi
+                                                    </div>
+                                                    <div
+                                                        class="py-1 mb-4 last:mb-0 other-message sentence defaultFadeInElement">
+                                                        <div class="default">
+                                                            <dspan>Hahaha! 😆 Now you're just being</dspan>
+                                                            <dspan>silly. 😜 I know you're capable
+                                                                <dspan />
+                                                                <dspan>of more than just hi! 😝
+                                                                    <dspan />
+                                                                    <dspan>Come on, let's chat about something</dspan>
+                                                                    <dspan>a bit more substantial! 😄 I</dspan>
+                                                                    <dspan>promise I'll be an excellent
+                                                                        conversationalist!</dspan>
+                                                                    <dspan>😁</dspan>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full mx-auto max-w-1.5xl 2xl:max-w-[47rem]"></div>
+                        <div class="max-h-[40%] px-5 sm:px-0 z-15 w-full mx-auto max-w-1.5xl 2xl:max-w-[47rem]">
+                            <div class="flex h-full items-center">
+                                <div class="h-full grow">
+                                    <div
+                                        class="relative flex h-full cursor-text items-end border border-transparent bg-cream-200 shadow-input transition-all duration-300 focus-within:border-cream-650 focus-within:shadow-none hover:border-cream-650 hover:shadow-none rounded-[30px]">
+                                        <div class="h-full grow overflow-y-auto py-3 pr-4 lg:py-2.5 pl-[1.185rem]">
+                                            <textarea
+                                                class="block w-full resize-none overflow-y-hidden whitespace-pre-wrap bg-transparent outline-none placeholder:text-brand-gray-400"
+                                                spellcheck="false" placeholder="Talk with Ludci" enterkeyhint="enter"
+                                                style="height: 32px !important;" id="input-text"></textarea>
+                                        </div>
+                                        <button id="sendButton" onclick="displayText()"
+                                            class="relative m-2 grid h-9 w-9 place-items-center rounded-full transition-colors duration-300"
+                                            style="backgroundColor: #F5EEDF;"
+                                            onmouseover="this.style.backgroundColor='#418A2F'"
+                                            onmouseout="this.style.backgroundColor='#F5EEDF'" type="button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16"
+                                                fill="#ffffff" class="transition-colors duration-300">
+                                                <path fill-rule="evenodd"
+                                                    d="M.852 7.648a1.2 1.2 0 0 1 0-1.696l4.8-4.8a1.2 1.2 0 0 1 1.696 0l4.8 4.8a1.2 1.2 0 1 1-1.697 1.696L7.7 4.897V14a1.2 1.2 0 0 1-2.4 0V4.897L2.548 7.648a1.2 1.2 0 0 1-1.696 0Z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 px-5 w-full mx-auto max-w-1.5xl 2xl:max-w-[47rem]">
+                            <div data-projection-id="4" style="opacity: 1;">
+                                <div class="mx-auto text-center font-sans text-xs font-normal text-brand-gray-400">This
+                                    early version of Ludci can make mistakes. Please don’t rely
+                                    on&nbsp;its&nbsp;information.</div>
+                            </div>
+                        </div>
+                    </div><audio></audio>
+                    <div class="fixed right-6 font-sans text-xl lg:right-12 lg:text-2xl top-4 lg:top-8 z-60">
+                        <div class="relative flex flex-col-reverse">
+                            <div class="flex flex-col p-1 text-sm text-gray-500 lg:text-lg"
+                                style="opacity: 0; visibility: hidden;">
+                                <button type="button" disabled=""
+                                    class="mb-1 rounded-full px-2 py-3 text-center bg-cream-650 text-dark-green-500">Pi
+                                    1</button><button type="button"
+                                    class="mb-1 rounded-full px-2 py-3 text-center hover:bg-cream-600">Pi
+                                    2</button><button type="button"
+                                    class="mb-1 rounded-full px-2 py-3 text-center hover:bg-cream-600">Pi
+                                    3</button><button type="button"
+                                    class="mb-1 rounded-full px-2 py-3 text-center hover:bg-cream-600">Pi
+                                    4</button><button type="button"
+                                    class="mb-1 rounded-full px-2 py-3 text-center hover:bg-cream-600">Pi
+                                    5</button><button type="button"
+                                    class="mb-1 rounded-full px-2 py-3 text-center hover:bg-cream-600">Pi
+                                    6</button>
+                            </div>
+                            <div class="relative flex items-center justify-end self-end p-2">
+                                <div class="absolute inset-0 -z-10 bg-cream-550"
+                                    style="border-radius: 9999px; opacity: 1;"></div>
+                                <button class="group z-10 flex items-center text-brand-gray-500" type="button">
+                                    <div><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                            viewBox="0 0 24 24" aria-hidden="true" class="group-hover:opacity-40"
+                                            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M13.5 4.06c0-1.336-1.616-2.005-2.56-1.06l-4.5 4.5H4.508c-1.141 0-2.318.664-2.66 1.905A9.76 9.76 0 001.5 12c0 .898.121 1.768.35 2.595.341 1.24 1.518 1.905 2.659 1.905h1.93l4.5 4.5c.945.945 2.561.276 2.561-1.06V4.06zM17.78 9.22a.75.75 0 10-1.06 1.06L18.44 12l-1.72 1.72a.75.75 0 001.06 1.06l1.72-1.72 1.72 1.72a.75.75 0 101.06-1.06L20.56 12l1.72-1.72a.75.75 0 00-1.06-1.06l-1.72 1.72-1.72-1.72z">
+                                            </path>
+                                        </svg></div>
+                                    <div class="overflow-visible whitespace-nowrap text-xs"
+                                        style="opacity: 0; width: 0px;">
+                                        <div class="absolute pl-4 invisible">Voice on</div>
+                                        <div class="pl-4 visible">Voice off</div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fixed top-4 left-6 lg:top-8 lg:left-12 z-90"><button id="sendButton"
+                            class="relative rounded-full bg-cream-550 p-1.5 hover:bg-cream-650" type="button"><svg
+                                width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                class="-scale-x-100 fill-brand-gray-500">
+                                <rect x="20.6105" y="15.8746" width="11.22" height="2.58239" rx="1.2912"
+                                    transform="rotate(-180 20.6105 15.8746)"></rect>
+                                <rect x="3.3922" y="8" width="17.216" height="2.58239" rx="1.2912"></rect>
+                            </svg></button></div><button
+                        class="fixed bottom-16 left-6 -z-20 rounded-full bg-cream-550 p-2 text-left text-xl text-brand-gray-500 enabled:hover:bg-cream-650 sm:bottom-4 lg:bottom-8 lg:left-12 z-60 hidden sm:block"
+                        type="button" style="opacity: 1; visibility: visible;"><svg stroke="currentColor"
+                            fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" height="1em"
+                            width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z">
+                            </path>
+                        </svg></button>
+
+                    <div class="fixed z-100"></div>
+                </div>
+
+
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function displayText() {
+
+            const inputText = document.getElementById('input-text').value;
+
+            const displayArea = document.getElementById('display-area');
+
+
+
+            if (inputText.trim() === '') {
+                return; // Don't add empty messages
+            }
+
+            // Create a new message element
+            const newMessageElement = document.querySelector('.user-message');
+            newMessageElement.textContent = inputText;
+            newMessageElement.classList.add('fade-in','flex', 'fade-up-text', 'user-message', 'justify-end', 'py-1', 'space-y-1', 'break-words', 'rounded-[10px]', 'bg-cream-600', 'p-3', 'ml-auto', 'w-fit', 'mb-3');
+
+            // Clear the input field
+            document.getElementById('input-text').value = '';
+
+            // Apply fade-in animation to the new message element
+            setTimeout(function () {
+                newMessageElement.classList.add('fade-in');
+            }, 0.1); // 0.1-second delay for immediate fade-in
+
+
+            // Append the new message element to the display area
+            displayArea.appendChild(newMessageElement);
+
+            // Remove old user messages if there are more than 2
+            const userMessages = document.querySelectorAll('.user-message');
+            if (userMessages.length > 1) {
+                userMessages[0].classList.add('fade-out');
+
+                // Listen for the animation end event
+                userMessages[0].addEventListener('animationend', function () {
+                    displayArea.removeChild(userMessages[0]);
+                });
+            }
+
+            // Set a default message to appear after the user sends a message
+
+            setTimeout(function () {
+                const defaultTextElement = document.createElement('div');
+
+
+                // Function to wrap every 6 words in a <p> tag
+                function wrapWordsInPTags(text, wordsPerParagraph = 2) {
+                    // Split the text into words
+                    const words = text.split(/\s+/);
+
+                    // Initialize an empty array to store paragraphs
+                    const paragraphs = [];
+
+                    // Loop through the words and group them into paragraphs
+                    for (let i = 0; i < words.length; i += wordsPerParagraph) {
+                        const paragraphWords = words.slice(i, i + wordsPerParagraph);
+                        const paragraph = `<span>${paragraphWords.join(' ')}</span> `;
+                        paragraphs.push(paragraph);
+                    }
+
+                    // Join the paragraphs and wrap them in a container element (e.g., <div>)
+                    const wrappedParagraphs = `<div class="py-1 mb-4 last:mb-0">${paragraphs.join('')}</div>`;
+
+                    // Count the number of <span> elements generated
+                    const spanCount = (wrappedParagraphs.match(/<span>/g) || []).length;
+
+                    return { wrappedHTML: wrappedParagraphs, spanCount };
+                }
+
+                // Example usage
+                const inputText = "Hahaha! 😆 Now you're just being silly. 😜 I know you're capable of more than just hi! 😝 Come on, let's chat about something a bit more substantial! 😄 I promise I'll be an excellent conversationalist! 😁";
+                const { wrappedHTML, spanCount } = wrapWordsInPTags(inputText);
+                console.log(wrappedHTML);
+                console.log(spanCount)
+
+                // Assuming you have the spanCount value from the previous code
+
+
+                // Define the CSS animation properties
+                const animationDuration = '0.9s';
+                const animationDelayBase = '0.2s';
+                const animationTimingFunction = 'cubic-bezier(0.11, 0, 0.5, 0)';
+                const animationName = 'fade-in-word';
+
+                // Loop through each <span> and apply the CSS animation
+                for (let i = 0; i < spanCount; i++) {
+                    const animationDelay = `${parseFloat(animationDelayBase) * i}s`;
+                    const cssRule = `
+                    span:nth-child(${i + 1}) {
+                        animation: ${animationName} ${animationDuration} ${animationDelay} forwards ${animationTimingFunction};
+                    }`;
+
+                    // Create a <style> element and append it to the <head>
+                    const styleElement = document.createElement('style');
+                    styleElement.textContent = cssRule;
+                    document.head.appendChild(styleElement);
+                }
+
+
+
+                defaultTextElement.innerHTML = wrappedHTML;
+
+                defaultTextElement.classList.add('other-message', 'sentence', 'mb-10');
+
+                
+
+                
+
+                // Get all sentence elements
+                const sentences = document.querySelectorAll('.ai-message');
+
+                // Function to trigger the animation for each sentence
+                function animateSentences() {
+                    sentences.forEach((sentence, index) => {
+                        // Apply a staggered delay to each sentence
+                        setTimeout(() => {
+                            sentence.style.animationPlayState = 'running';
+                        }, index * 500); // Adjust the delay duration (in milliseconds) as needed
+                    });
+                }
+
+                animateSentences()
+
+
+                setTimeout(function () {
+                    defaultTextElement.classList.add('fadeotherIn');
+                    
+                },5); // 0.1-second delay for immediate fade-in of default message
+
+                displayArea.appendChild(defaultTextElement);
+
+                // Remove old other messages if there are more than 2
+                const otherMessages = document.querySelectorAll('.other-message');
+                if (otherMessages.length > 1) {
+                    otherMessages[0].classList.add('fade-out');
+
+                    otherMessages[0].addEventListener('animationend', function () {
+                        displayArea.removeChild(otherMessages[0]);
+                    });
+                    //displayArea.removeChild(otherMessages[0]);
+                }
+
+            }, 0.1); // 1-second delay after the user sends a message
+
+        }
+
+        const textarea = document.getElementById('input-text');
+        const sendButton = document.getElementById('sendButton');
+
+        sendButton.style.backgroundColor = '#F5EEDF';
+
+        // Event listener for changes in the textarea content
+        textarea.addEventListener('input', () => {
+            // Check if the textarea content is empty
+            if (textarea.value.trim() === '') {
+                // Set the button's background color to the default Tailwind CSS color
+                sendButton.style.backgroundColor = '#418A2F';
+                sendButton.style.backgroundColor = '#F5EEDF';
+            } else {
+                // Change the button's background color to the hover Tailwind CSS color
+                sendButton.style.backgroundColor = '#F5EEDF';
+                sendButton.style.backgroundColor = '#418A2F';
+            }
+        });
+
+        // Event listener for Enter key press within the textarea
+        textarea.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter' && !event.shiftKey) {
+                event.preventDefault(); // Prevent the default behavior (line break)
+                displayText()
+            }
+        });
+
+
+        function scrollToTarget() {
+            const targetDiv = document.getElementById('scrollTarget');
+            if (targetDiv) {
+                targetDiv.scrollIntoView({ behavior: 'auto', block: 'nearest', inline: 'nearest' });
+            }
+        }
+
+        // Call the function when the page is loaded
+        window.addEventListener('load', scrollToTarget);
+
+
+
+        ///////////////////////////////////////////////////
+        /*
+        function displayText() {
+        const inputText = document.getElementById('input-text').value;
+        const displayArea = document.getElementById('display-area');
+        
+        if (inputText.trim() === '') {
+            return; // Don't add empty messages
+        }
+        
+        // Create a new message element for the user's input
+        
+        const userMessageElement = document.createElement('div');
+        userMessageElement.textContent = inputText;
+        userMessageElement.classList.add('message', 'fade-up-text', 'user-message');
+        
+        // Clear the input field
+        document.getElementById('input-text').value = '';
+        
+        // Apply fade-in animation to the new user message element
+        setTimeout(function () {
+            userMessageElement.style.opacity = 1;
+        }, 100); // 0.1-second delay for immediate fade-in
+        
+        // Append the user's message element to the display area
+        displayArea.appendChild(userMessageElement);
+        
+        // Remove old user messages if there are more than 2
+        const userMessages = document.querySelectorAll('.user-message');
+        if (userMessages.length > 1) {
+            displayArea.removeChild(userMessages[0]);
+        }
+        
+        // Send the user's message to the server and handle the response
+        fetch('/api/endpoint', { // Replace with your server's API endpoint
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ message: inputText }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Create a new message element for the server's response
+            const serverMessageElement = document.createElement('div');
+            serverMessageElement.textContent = data.response; // Assuming the server returns a "response" field
+            serverMessageElement.classList.add('message', 'fade-up-text', 'other-message');
+            
+            // Append the server's response message element to the display area
+            displayArea.appendChild(serverMessageElement);
+        
+            // Remove old other messages if there are more than 2
+            const otherMessages = document.querySelectorAll('.other-message');
+            if (otherMessages.length > 1) {
+                displayArea.removeChild(otherMessages[0]);
+            }
+        
+            // Apply fade-in animation to the new server response message element
+            setTimeout(function () {
+                serverMessageElement.style.opacity = 1;
+            }, 100); // 0.1-second delay for immediate fade-in of server response message
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            // Handle errors from the API request here
+        });
+        
+        }
+        */
+
+    </script>
+
+</body>
